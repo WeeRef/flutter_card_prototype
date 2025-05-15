@@ -26,10 +26,8 @@ class CardGameApp extends StatelessWidget {
         routes: {
           '/': (context) => const HomeScreen(),
           '/game': (context) => const GameScreen(),
-          '/result': (context) => ResultScreen(
-            didPlayerWin: ModalRoute.of(context)!.settings.arguments as bool,
-          ),
-        },
+          '/result': (context) => const ResultScreen(),     
+                  },
       ),
     );
   }
